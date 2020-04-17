@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>app</title>
+    
+    <link type="text/css" href="_css/nice-select.css" rel="stylesheet" />
+    <link type="text/css" href="_css/_aplicacao.css" rel="stylesheet" />
+    
+    
+    <script src="_js/jquery.js"></script> 
+	<script src="_js/jquery.nice-select.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			$('select').niceSelect();
+		});	
+	</script>
+</head>
+
+	<body>
+	    <div id="warp">
+	        <header class="col__topo">
+	            <img src="_img/logo-itau-varejo-desktop.png" class="img__logo" alt="">
+
+	            <div class="table__right">
+	                <div>
+	                    <h2>IU Pay</h2>
+	                    <a href="javascript:void(0)" class="bt__notificacao"></a>
+	                </div>
+
+	                <div>
+	                    <figure>
+	                        <img src="_img/avatar.png" alt="">      
+	                    </figure>
+	                    
+	                    <h3>antonio carlos santana mesquisa</h3>
+	                </div>
+	            </div>
+	        </header>
+
+	        <section class="col__template">
+	            <aside class="aside__left">
+	                <nav>
+	                    <ul>
+	                        <li><a href="javascript:void(0)">Menu 1</a></li>
+	                        <li><a href="javascript:void(0)">Menu 2</a></li>
+	                        <li><a href="javascript:void(0)">Menu 3</a></li>
+	                        <li><a href="javascript:void(0)">Menu 4</a></li>
+	                        <li><a href="javascript:void(0)">Menu 5</a></li>
+	                        <li><a href="javascript:void(0)">Menu 6</a></li>
+	                        <li><a href="javascript:void(0)">Menu 7</a></li>
+	                    </ul>
+					</nav>
+	                
+	                <a href="javascript:void(0)" class="bt__brazil">Linguagem</a>
+	            </aside>
+
+	           	<article class="col__conteudo">
+	               	<header class="col__conte">
+	                  	<nav>
+	                       	<ul>
+	                           <li><a href="javascript:void(0)">Home</a></li>
+	                           <li><a href="javascript:void(0)">Configurações</a></li>
+	                       	</ul>
+	                   	</nav>
+	           
+	                   	<a href="" class="__btvoltar">Voltar</a>
+	               
+	                  	<h3>configurações</h3>
+	               		<p>aqui você pode parametrizar as datas de pagamentos, as equivalências do sistema e fazer o upload das bases de dados </p>
+		              
+		               	<ul class="list__detalhes">
+		                  	<li><a href="javascript:void(0)" title="Datas de Pagamento">Datas de Pagamento</a></li>
+		                   	<li><a href="javascript:void(0)" title="equivalenicas de fornecedores">equivalenicas de fornecedores</a></li>
+		                   	<li><a href="javascript:void(0)" title="uploads de arquivos">uploads de arquivos</a></li>
+		               	</ul>
+	               	</header>
+	           
+	               <div class="col__list">
+	                   	<div class="col__mes">
+	                       <h3>parametrizar datas do mês</h3>
+
+	                    	<div class="select">
+	                       		<select>
+								  	<option value="1">agosto</option>
+								  	<option value="1">setembro</option>
+								  	<option value="1">outubro</option>
+								</select>
+	                       	</div>
+	                   	</div>
+
+	                 	<div class="col__calen">
+	                    	<ul class="lista__periodo">
+	                         	<li class="bt__active liperiodo1"><a href="javascript:void(0)">1º período</a></li>
+	                          	<li class="liperiodo2"><a href="javascript:void(0)">2º periodo</a></li>
+	                          	<li class="liperiodo3"><a href="javascript:void(0)">3º periodo</a></li>
+	                      	</ul>
+	                      	
+	                      	<div class="datas__select">
+	                      		
+	                      	<div class="dataDefinindo">
+	                      		<div class="__left">
+	                      			<h2>períodos de solicitações para o mês de agosto</h2>
+	                      			
+	                      			<div>
+	                      				<header>
+	                      					<ul>
+					                         	<li>1º período</li>
+					                          	<li>2º periodo</li>
+					                          	<li>3º periodo</li>
+					                      	</ul>
+	                      				</header>
+	                      			</div>
+
+	                      			<table>
+	         							<tr class="txt__center">
+								           	<td>dom</td>
+								           	<td width="80"></td>
+								           	<td>seg</td>
+								           	<td width="80"></td>
+								           	<td>ter</td>
+								           	<td width="80"></td>
+								           	<td>qua</td>
+								           	<td width="80"></td>
+											<td>qui</td>
+								           	<td width="80"></td>
+								           	<td>sex</td>
+								           	<td width="80"></td>
+											<td>sab</td>
+								         </tr>
+
+								        <tr>
+								         	<td></td>
+								         	<td></td>
+								         	<td></td>
+								         	<td></td>
+								         	<td></td>
+								         	<td></td>
+								         	<td></td>
+											<td></td>
+											<td class="dia1">1</td>
+											<td></td>
+											<td class="dia2">2</td>
+											<td></td>
+											<td class="bg__color">3</td>
+								         </tr>
+
+								       	<tr>
+											<td height="3"></td>
+										</tr>
+
+								        <tr>
+								        	<td class="bg__color">4</td>
+								            <td></td>
+											<td class="dia5">5</td>
+								            <td></td>
+								            <td class="dia6">6</td>
+								            <td></td>
+								            <td class="dia7">7</td>
+								            <td></td>
+								            <td class="dia8">8</td>
+								            <td></td>
+								            <td class="dia9">9</td>
+								            <td></td>
+								            <td class="bg__color">10</td>
+								         </tr>
+
+								         <tr>
+											<td height="3"></td>
+										</tr>
+
+								        <tr>
+								        	<td class="bg__color">11</td>
+								            <td></td>
+											<td class="dia12">12</td>
+								            <td></td>
+								            <td class="dia13">13</td>
+								            <td></td>
+								            <td class="dia14">14</td>
+								            <td></td>
+								            <td class="dia15">15</td>
+								            <td></td>
+								            <td class="dia16">16</td>
+								            <td></td>
+								            <td class="bg__color">17</td>
+								        </tr>
+										
+										<tr>
+											<td height="3"></td>
+										</tr>
+								        
+								        <tr>
+								        	<td class="bg__color">18</td>
+								            <td></td>
+											<td class="dia19">19</td>
+								            <td></td>
+								            <td class="dia20">20</td>
+								            <td></td>
+								            <td class="dia21">21</td>
+								            <td></td>
+								            <td class="dia22">22</td>
+								            <td></td>
+								            <td class="dia23">23</td>
+								            <td></td>
+								            <td class="bg__color">24</td>
+								        </tr>
+
+								        <tr>
+											<td height="3"></td>
+										</tr>
+
+								        <tr>
+								        	<td class="bg__color">25</td>
+								            <td></td>
+											<td class="dia26">26</td>
+								            <td></td>
+								            <td class="dia27">27</td>
+								            <td></td>
+								            <td class="dia28">28</td>
+								            <td></td>
+								            <td class="dia29">29</td>
+								            <td></td>
+								            <td class="dia30">30</td>
+								            <td></td>
+								            <td class="bg__color">31</td>
+								        </tr>
+							     	</table>
+	                      		</div>
+	                      		
+	                      		<div class="__righ">
+	                      			<form onsubmit="return false;">
+
+		                      			<h2><span class="nPeriodo">1</span>º periodo</h2>
+		                      			
+		                      			<div class="col__dia__dia">
+		                      				<div class="__dia __block">
+		                      					<h3>do dia</h3>
+		                      					<select id="dataInicio">
+												  	<option value="1">01</option>
+												  	<option value="2">02</option>
+												  	<option value="3">03</option>
+												  	<option value="4">04</option>
+												  	<option value="5">05</option>
+												  	<option value="6">06</option>
+												  	<option value="7">07</option>
+												  	<option value="8">08</option>
+												  	<option value="9">09</option>
+												  	<option value="10">10</option>
+												  	<option value="11">11</option>
+												  	<option value="12">12</option>
+												  	<option value="13">13</option>
+												  	<option value="14">14</option>
+												  	<option value="15">15</option>
+												  	<option value="16">16</option>
+												  	<option value="17">17</option>
+												  	<option value="18">18</option>
+												  	<option value="19">19</option>
+												  	<option value="20">20</option>
+												  	<option value="21">21</option>
+												  	<option value="22">22</option>
+												  	<option value="23">23</option>
+												  	<option value="24">24</option>
+												  	<option value="25">25</option>
+												  	<option value="26">26</option>
+												  	<option value="27">27</option>
+												  	<option value="28">28</option>
+												  	<option value="29">29</option>
+												  	<option value="30">30</option>
+												  	<option value="31">31</option>
+												</select>
+		                      				</div>
+
+		                      				<div class="__ate __block">
+		                      					<h3>até o dia</h3>
+
+		                      					<select id="dataFim">
+												  	<option value="1">01</option>
+												  	<option value="2">02</option>
+												  	<option value="3">03</option>
+												  	<option value="4">04</option>
+												  	<option value="5">05</option>
+												  	<option value="6">06</option>
+												  	<option value="7">07</option>
+												  	<option value="8">08</option>
+												  	<option value="9">09</option>
+												  	<option value="10">10</option>
+												  	<option value="11">11</option>
+												  	<option value="12">12</option>
+												  	<option value="13">13</option>
+												  	<option value="14">14</option>
+												  	<option value="15">15</option>
+												  	<option value="16">16</option>
+												  	<option value="17">17</option>
+												  	<option value="18">18</option>
+												  	<option value="19">19</option>
+												  	<option value="20">20</option>
+												  	<option value="21">21</option>
+												  	<option value="22">22</option>
+												  	<option value="23">23</option>
+												  	<option value="24">24</option>
+												  	<option value="25">25</option>
+												  	<option value="26">26</option>
+												  	<option value="27">27</option>
+												  	<option value="28">28</option>
+												  	<option value="29">29</option>
+												  	<option value="30">30</option>
+												  	<option value="31">31</option>
+												</select>
+		                      				</div>
+
+		                      			</div>
+		                      			<button class="bt__definir" type="submit" onclick="definirPeriodo(1)">definir data do <span class="nPeriodo">1</span>º período</button>
+	                      			
+	                      			</form>
+	                      		</div>
+	                      		</div>
+
+								<div class="__data datasDefinidas" style="display: none">
+									<h5>os períodos de solicitações para o mês de agosto foram definidos</h5>
+	                      			<a href="/_app" class="bt__redefinir">redefinir períodos de agosto</a>
+									
+									<div class="__left">
+		                      			<div>
+		                      				<header>
+		                      					<ul>
+						                         	<li>1º período</li>
+						                          	<li>2º periodo</li>
+						                          	<li>3º periodo</li>
+						                      	</ul>
+		                      				</header>
+		                      			</div>
+
+		                      			<table>
+		         							<tr class="txt__center">
+									           	<td>dom</td>
+									           	<td width="80"></td>
+									           	<td>seg</td>
+									           	<td width="80"></td>
+									           	<td>ter</td>
+									           	<td width="80"></td>
+									           	<td>qua</td>
+									           	<td width="80"></td>
+												<td>qui</td>
+									           	<td width="80"></td>
+									           	<td>sex</td>
+									           	<td width="80"></td>
+												<td>sab</td>
+									         </tr>
+
+									        <tr>
+									         	<td></td>
+									         	<td></td>
+									         	<td></td>
+									         	<td></td>
+									         	<td></td>
+									         	<td></td>
+									         	<td></td>
+												<td></td>
+												<td class="dia1">1</td>
+												<td></td>
+												<td class="dia2">2</td>
+												<td></td>
+												<td class="bg__color">3</td>
+									         </tr>
+
+									       	<tr>
+												<td height="3"></td>
+											</tr>
+
+									        <tr>
+									        	<td class="bg__color">4</td>
+									            <td></td>
+												<td class="dia5">5</td>
+									            <td></td>
+									            <td class="dia6">6</td>
+									            <td></td>
+									            <td class="dia7">7</td>
+									            <td></td>
+									            <td class="dia8">8</td>
+									            <td></td>
+									            <td class="dia9">9</td>
+									            <td></td>
+									            <td class="bg__color">10</td>
+									         </tr>
+
+									         <tr>
+												<td height="3"></td>
+											</tr>
+
+									        <tr>
+									        	<td class="bg__color">11</td>
+									            <td></td>
+												<td class="dia12">12</td>
+									            <td></td>
+									            <td class="dia13">13</td>
+									            <td></td>
+									            <td class="dia14">14</td>
+									            <td></td>
+									            <td class="dia15">15</td>
+									            <td></td>
+									            <td class="dia16">16</td>
+									            <td></td>
+									            <td class="bg__color">17</td>
+									        </tr>
+											
+											<tr>
+												<td height="3"></td>
+											</tr>
+									        
+									        <tr>
+									        	<td class="bg__color">18</td>
+									            <td></td>
+												<td class="dia19">19</td>
+									            <td></td>
+									            <td class="dia20">20</td>
+									            <td></td>
+									            <td class="dia21">21</td>
+									            <td></td>
+									            <td class="dia22">22</td>
+									            <td></td>
+									            <td class="dia23">23</td>
+									            <td></td>
+									            <td class="bg__color">24</td>
+									        </tr>
+
+									        <tr>
+												<td height="3"></td>
+											</tr>
+
+									        <tr>
+									        	<td class="bg__color">25</td>
+									            <td></td>
+												<td class="dia26">26</td>
+									            <td></td>
+									            <td class="dia27">27</td>
+									            <td></td>
+									            <td class="dia28">28</td>
+									            <td></td>
+									            <td class="dia29">29</td>
+									            <td></td>
+									            <td class="dia30">30</td>
+									            <td></td>
+									            <td class="bg__color">31</td>
+									        </tr>
+								     	</table>
+		                      		</div>
+								</div>
+	                      	</div>
+	                  	</div>
+	               	</div> 
+	           	</article>
+	    	</section>
+	    </div>
+	</body>
+</html>
+<script type="text/javascript">
+	
+	function definirPeriodo(peri){
+
+		var dataIni = $("#dataInicio").val();
+		var dataFim = $("#dataFim").val();
+		//
+		//if(peri == 1){
+
+			if(dataIni != ""){
+
+				if(parseInt(dataIni) > parseInt(dataFim)){
+					alert("Data inicio deve ser maior que a data final");
+					return false;
+				}
+
+
+				for (var i = parseInt(dataIni); i <= parseInt(dataFim); i++) {
+
+					if(peri == 1){$(".dia" + i).addClass("bg__type__um");}
+					if(peri == 2){$(".dia" + i).addClass("bg__type__do");}
+					if(peri == 3){$(".dia" + i).addClass("bg__type__tr");}
+
+					for (var j = 0; j <= 31; j++) {
+
+						if(j <= i){
+							$("#dataInicio option[value=" + j + "]").attr('disabled','disabled');
+							$("#dataFim option[value=" + j + "]").attr('disabled','disabled');
+						}
+					}
+					
+				}
+				var nP = parseInt(peri) + 1;
+				if(peri == 3){
+					nP=1;
+					$(".dataDefinindo").hide();
+					$(".datasDefinidas").show();
+				}
+				$(".liperiodo" + peri).addClass("bt__check");
+				$(".liperiodo" + nP).addClass("bt__active");
+				$(".nPeriodo").html(nP);
+
+				var dIni = parseInt(dataFim) + 1;
+				var dFim = parseInt(dataFim) + 1;
+				$('#dataInicio').val(dIni).niceSelect('update');
+				$('#dataFim').val(dFim).niceSelect('update');
+
+				$(".bt__definir").attr("onclick", "definirPeriodo(" + nP + ")")
+			}
+
+		//}
+
+	}
+</script>
