@@ -1,0 +1,92 @@
+<html>
+
+<head>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/locales/bootstrap-datepicker.pt-BR.min.js"></script>
+    <script src="js/bootstrap-datepicker-globalize.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <meta charset="utf-8" />
+</head>
+
+<body>
+    <div class="row m-5">
+        <div class="col-md-2">
+            <input type="number" class="number1" min="0" max="10" placeholder="0">
+        </div>
+        <div class="col-md-2">
+            <input type="number" class="number2" min="0" max="10" disabled placeholder="0">
+        </div>
+        <div class="col-md-2">
+            <input type="number" class="number3" min="0" max="10" disabled placeholder="0">
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        var campoNumero1 = document.getElementsByClassName("number1")[0];
+        var campoNumero2 = document.getElementsByClassName("number2")[0];
+        var campoNumero3 = document.getElementsByClassName("number3")[0];
+
+
+        campoNumero1.addEventListener("input", function(e) {
+            if (Number(e.target.value <= 0)) {
+                campoNumero2.disabled = true;
+                campoNumero3.disabled = true;
+                campoNumero2.value = "";
+                campoNumero3.value = "";
+                e.target.value = "0";
+                return;
+            }
+
+            if (Number(e.target.value) > Number(e.target.max))
+                e.target.value = e.target.max;
+
+            e.target.value = Number(e.target.value);
+            campoNumero2.disabled = false;
+        });
+
+        campoNumero2.addEventListener("input", function(e) {
+            if (Number(e.target.value <= 0)) {
+                campoNumero3.disabled = true;
+                campoNumero3.value = "";
+                e.target.value = "0";
+                return;
+            }
+            if (Number(e.target.value) > Number(e.target.max))
+                e.target.value = e.target.max;
+
+            e.target.value = Number(e.target.value);
+            campoNumero3.disabled = false;
+        });
+
+        campoNumero3.addEventListener("input", function(e) {
+            if (Number(e.target.value <= 0)) {
+                e.target.value = "0";
+                return;
+            }
+            if (Number(e.target.value) > Number(e.target.max))
+                e.target.value = e.target.max;
+
+            e.target.value = Number(e.target.value);
+        });
+
+
+    });
+</script>
+
+<style>
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+        opacity: 1;
+    }
+    
+    input[type=number] {
+        width: 100%;
+    }
+</style>
